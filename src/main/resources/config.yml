@@ -1,0 +1,39 @@
+# Tag Chain Minigame Configuration
+
+# Blacklist - UUIDs of banned players
+blacklist:
+  - "a4ca86f3-0489-4b67-91a3-7bd94cf31067"
+
+# Lobby location (where players spawn before game)
+lobby:
+  world: world
+  x: 0
+  y: 64
+  z: 0
+  yaw: 0
+  pitch: 0
+
+# Game arena location (where players are teleported when game starts)
+game:
+  world: world
+  x: 100
+  y: 64
+  z: 100
+  yaw: 0
+  pitch: 0
+
+# Game settings
+game-settings:
+  preparation-phase-duration: 120  # seconds (2 minutes)
+  glow-show-duration: 3            # seconds
+  glow-interval: 60                # seconds (how often glow appears)
+  
+# Message settings
+messages:
+  preparation-start: "§6[Tag Chain] §aPreparation phase started! You have 2 minutes."
+  game-start: "§6[Tag Chain] §aGame started! Hunt your target!"
+  player-eliminated: "§6[Tag Chain] §c{player} was eliminated!"
+  player-disconnect: "§6[Tag Chain] §c{player} disconnected and was eliminated!"
+  spectator-chat-error: "§6[Tag Chain] §cSpectators cannot chat during the game."
+  not-found: "§6[Tag Chain] §cPlayer not found."
+  already-spectator: "§6[Tag Chain] §c{player} is already a spectator."

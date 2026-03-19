@@ -1,0 +1,25 @@
+name: TagChainMinigame
+version: 1.0
+main: com.example.tagchain.TagChainPlugin
+description: A competitive tag chain minigame for Spigot servers
+api-version: "1.21"
+
+depend:
+  - ProtocolLib
+
+commands:
+  game:
+    description: Tag Chain game command
+    usage: /game <start|stop|status|setlobby|setgame|spectator>
+    aliases: [tc, tagchain]
+
+permissions:
+  game.admin:
+    description: Access to game commands
+    default: op
+  game.setup:
+    description: Access to setup commands
+    default: op
+  game.spectator:
+    description: Can be converted to spectator
+    default: true
